@@ -1,16 +1,13 @@
 import React from 'react'
 import { CSSTransition } from 'react-transition-group';
 import {
-    CogIcon,
+    ProcurementIcon,
+    QuestionIcon,
+    SunbedIcon,
     ArrowIcon
 } from '../../../zodicons'
 import DropDownItem from '../../DropDownItem';
 
-const ProfileImg = () => {
-    return (
-        <img className="profile-img" src="https://hub.gunsel.com.tr/employeeImages/27345.jpg" alt="profile_img" srcSet="https://hub.gunsel.com.tr/employeeImages/27345.jpg" />
-    )
-}
 const MainMenu = (props) => {
     return (
         <CSSTransition
@@ -21,15 +18,23 @@ const MainMenu = (props) => {
             onEnter={props.calcHeight}
         >
             <div className="menu">
-                <DropDownItem leftIcon={<ProfileImg />}>My Profile</DropDownItem>
                 <DropDownItem
-                    leftIcon={<CogIcon />}
+                    leftIcon={<QuestionIcon />}
                     rightIcon={<ArrowIcon />}
-                    goToMenu="settings"
+                    goToMenu="assistance"
                     setActiveMenu={props.setActiveMenu}
                 >
-                    Settings
+                    Need Assistance
                 </DropDownItem>
+                <DropDownItem
+                    leftIcon={<ProcurementIcon />}
+                    rightIcon={<ArrowIcon />}
+                    goToMenu="procurement"
+                    setActiveMenu={props.setActiveMenu}
+                >
+                    Procurement
+                </DropDownItem>
+                <DropDownItem leftIcon={<SunbedIcon />}>TimeOff</DropDownItem>
             </div>
         </CSSTransition>
     )
