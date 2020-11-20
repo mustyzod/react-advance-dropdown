@@ -1,11 +1,6 @@
 import React from 'react'
 import { CSSTransition } from 'react-transition-group';
-import {
-    ProcurementIcon,
-    QuestionIcon,
-    SunbedIcon,
-    ArrowIcon
-} from '../../../zodicons'
+import * as Icons from '../../../zodicons'
 import DropDownItem from '../../DropDownItem';
 
 const MainMenu = (props) => {
@@ -19,22 +14,24 @@ const MainMenu = (props) => {
         >
             <div className="menu">
                 <DropDownItem
-                    leftIcon={<QuestionIcon />}
-                    rightIcon={<ArrowIcon />}
+                    to="#"
+                    leftIcon={<Icons.QuestionIcon />}
+                    rightIcon={<Icons.ArrowIcon />}
                     goToMenu="assistance"
                     setActiveMenu={props.setActiveMenu}
                 >
                     Need Assistance
                 </DropDownItem>
                 <DropDownItem
-                    leftIcon={<ProcurementIcon />}
-                    rightIcon={<ArrowIcon />}
+                    to="#"
+                    leftIcon={<Icons.ProcurementIcon />}
+                    rightIcon={<Icons.ArrowIcon />}
                     goToMenu="procurement"
                     setActiveMenu={props.setActiveMenu}
                 >
                     Procurement
                 </DropDownItem>
-                <DropDownItem leftIcon={<SunbedIcon />}>TimeOff</DropDownItem>
+                <DropDownItem to="/timeoff" leftIcon={<Icons.SunbedIcon />}>TimeOff</DropDownItem>
             </div>
         </CSSTransition>
     )

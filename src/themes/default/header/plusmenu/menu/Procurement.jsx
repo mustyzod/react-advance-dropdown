@@ -1,15 +1,6 @@
 import React from 'react'
 import { CSSTransition } from 'react-transition-group';
-import {
-    ArrowIcon,
-    NDAIcon,
-    PermissionIcon,
-    ContractIcon,
-    ShoppingCartIcon,
-    SampleIcon,
-    PurchaseOrderIcon,
-    ShipmentIcon
-} from '../../../zodicons'
+import * as Icons from '../../../zodicons'
 import DropDownItem from '../../DropDownItem';
 
 const Procurement = (props) => {
@@ -23,17 +14,18 @@ const Procurement = (props) => {
         >
             <div className="menu">
                 <DropDownItem
-                    leftIcon={<ArrowIcon />}
+                    to="#"
+                    leftIcon={<Icons.ArrowIcon />}
                     goToMenu="main"
                     setActiveMenu={props.setActiveMenu}
                 />
-                <DropDownItem leftIcon={<NDAIcon />}>NDA</DropDownItem>
-                <DropDownItem leftIcon={<PermissionIcon />}>LOI</DropDownItem>
-                <DropDownItem leftIcon={<ContractIcon />}>LTA</DropDownItem>
-                <DropDownItem leftIcon={<ShoppingCartIcon />}>Purchasing</DropDownItem>
-                <DropDownItem leftIcon={<SampleIcon />}>Free Sample</DropDownItem>
-                <DropDownItem leftIcon={<PurchaseOrderIcon />}>Purchase Order Document</DropDownItem>
-                <DropDownItem leftIcon={<ShipmentIcon />}>Shipment</DropDownItem>
+                <DropDownItem to="/nda" leftIcon={<Icons.NDAIcon />}>NDA</DropDownItem>
+                <DropDownItem to="/loi" leftIcon={<Icons.PermissionIcon />}>LOI</DropDownItem>
+                <DropDownItem to="/lta" leftIcon={<Icons.ContractIcon />}>LTA</DropDownItem>
+                <DropDownItem to="/purchasing" leftIcon={<Icons.ShoppingCartIcon />}>Purchasing</DropDownItem>
+                <DropDownItem to="/free-sample" leftIcon={<Icons.SampleIcon />}>Free Sample</DropDownItem>
+                <DropDownItem to="/purchase-order" leftIcon={<Icons.PurchaseOrderIcon />}>Purchase Order Document</DropDownItem>
+                <DropDownItem to="/shipment" leftIcon={<Icons.ShipmentIcon />}>Shipment</DropDownItem>
             </div>
         </CSSTransition>
     )

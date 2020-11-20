@@ -1,9 +1,6 @@
 import React from 'react'
 import { CSSTransition } from 'react-transition-group';
-import {
-    CogIcon,
-    ArrowIcon
-} from '../../../zodicons'
+import * as Icons from '../../../zodicons'
 import DropDownItem from '../../DropDownItem';
 
 const ProfileImg = () => {
@@ -21,10 +18,11 @@ const MainMenu = (props) => {
             onEnter={props.calcHeight}
         >
             <div className="menu">
-                <DropDownItem leftIcon={<ProfileImg />}>My Profile</DropDownItem>
+                <DropDownItem to="/myprofile" leftIcon={<ProfileImg />}>My Profile</DropDownItem>
                 <DropDownItem
-                    leftIcon={<CogIcon />}
-                    rightIcon={<ArrowIcon />}
+                    to="#"
+                    leftIcon={<Icons.CogIcon />}
+                    rightIcon={<Icons.ArrowIcon />}
                     goToMenu="settings"
                     setActiveMenu={props.setActiveMenu}
                 >

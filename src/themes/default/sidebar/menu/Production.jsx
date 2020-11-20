@@ -2,25 +2,20 @@ import React, { useState } from 'react';
 import * as Icons from '../../zodicons'
 
 const dummy = [
-    { name: "Active Employee" },
-    { name: "Passive Employee" },
-    { name: "Outsource Employee" },
-    { name: "Phone Extension" },
-    { name: "Seating Plan" },
-    { name: "Organogram" },
-    { name: "TimeOff" },
-    { name: "Attendance" },
+    { name: "Production Request" },
+    { name: "Production Report" },
+    { name: "Manage Plans" }
 ]
 
-const HumanResource = () => {
+const Production = () => {
     const [open, setOpen] = useState(false)
     return (
         <ul className="sidemenu">
             {/* <li className="sidemenu-parent sidemenu-active" onClick={() => setOpen(!open)} > */}
             <li className="sidemenu-parent" onClick={() => setOpen(!open)} >
-                <Icons.HRIcon />
+                <Icons.VehicleProductionIcon />
                 <span className="sidemenu-text mobile-hide">
-                    Human Resource
+                    Production
                 </span>
                 <span className="sidemenu-arrow mobile-hide"><Icons.ArrowDownIcon /></span>
             </li>
@@ -45,4 +40,4 @@ const HumanResource = () => {
     );
 };
 
-export default HumanResource;
+export default Production;

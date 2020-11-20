@@ -16,7 +16,6 @@ import { ReactComponent as Bolt } from './icons/bolt.svg';
 import { ReactComponent as Procurement } from './icons/buy-button.svg';
 import { ReactComponent as Question } from './icons/question.svg';
 import { ReactComponent as Sunbed } from './icons/sunbed.svg';
-
 import { ReactComponent as Bell } from './icons/bell.svg'
 import { ReactComponent as Messenger } from './icons/messenger.svg'
 import { ReactComponent as Caret } from './icons/caret.svg'
@@ -28,33 +27,34 @@ import { ReactComponent as Department } from './icons/department.svg'
 import { ReactComponent as ArrowDown } from './icons/arrow-down.svg'
 import { ReactComponent as HR } from './icons/hr.svg'
 import { ReactComponent as Team } from './icons/team.svg'
+import { ReactComponent as VehicleProduction } from './icons/productivity.svg'
 
-export const CogIcon = () => <Cog/>
-export const ArrowIcon = () => <Arrow/>
-export const NDAIcon = () => <NDA/>
-export const PermissionIcon = () => <Permission/>
-export const ContractIcon = () => <Contract/>
-export const ShoppingCartIcon = () => <ShoppingCart/>
-export const SampleIcon = () => <Sample/>
-export const PurchaseOrderIcon = () => <PurchaseOrder/>
-export const ShipmentIcon = () => <Shipment/>
-export const EngineerIcon = () => <Engineer/>
-export const HumanResourcesIcon = () => <HumanResources/>
-export const OnlineSupportIcon = () => <OnlineSupport/>
-export const ToolsIcon = () => <Tools/>
-export const BoltIcon = () => <Bolt/>
-export const ProcurementIcon = () => <Procurement/>
-export const QuestionIcon = () => <Question/>
-export const SunbedIcon = () => <Sunbed/>
-
-export const BellIcon = () => <Bell/>
-export const MessengerIcon = () => <Messenger/>
-export const CaretIcon = () => <Caret/>
-export const PlusIcon = () => <Plus/>
-export const UserEditIcon = () => <UserEdit/>
-export const KeyIcon = () => <Key/>
-export const DashboardIcon = () => <Dashboard/>
-export const DepartmentIcon = () => <Department/>
-export const ArrowDownIcon = () => <ArrowDown/>
-export const HRIcon = () => <HR/>
-export const TeamIcon = () => <Team/>
+export const CogIcon = () => <Cog />
+export const ArrowIcon = () => <Arrow />
+export const NDAIcon = () => <NDA />
+export const PermissionIcon = () => <Permission />
+export const ContractIcon = () => <Contract />
+export const ShoppingCartIcon = () => <ShoppingCart />
+export const SampleIcon = () => <Sample />
+export const PurchaseOrderIcon = () => <PurchaseOrder />
+export const ShipmentIcon = () => <Shipment />
+export const EngineerIcon = () => <Engineer />
+export const HumanResourcesIcon = () => <HumanResources />
+export const OnlineSupportIcon = () => <OnlineSupport />
+export const ToolsIcon = () => <Tools />
+export const BoltIcon = () => <Bolt />
+export const ProcurementIcon = () => <Procurement />
+export const QuestionIcon = () => <Question />
+export const SunbedIcon = () => <Sunbed />
+export const BellIcon = () => <Bell />
+export const MessengerIcon = () => <Messenger />
+export const CaretIcon = () => <Caret />
+export const PlusIcon = () => <Plus />
+export const UserEditIcon = () => <UserEdit />
+export const KeyIcon = () => <Key />
+export const DashboardIcon = () => <Dashboard />
+export const DepartmentIcon = () => <Department />
+export const ArrowDownIcon = () => <ArrowDown />
+export const HRIcon = () => <HR />
+export const TeamIcon = () => <Team />
+export const VehicleProductionIcon = () => <VehicleProduction />

@@ -1,10 +1,6 @@
 import React from 'react';
 import { CSSTransition } from 'react-transition-group';
-import {
-    ArrowIcon,
-    KeyIcon,
-    UserEditIcon
-} from '../../../zodicons'
+import * as Icons from '../../../zodicons'
 import DropDownItem from '../../DropDownItem';
 
 const Settings = (props) => {
@@ -18,12 +14,13 @@ const Settings = (props) => {
         >
             <div className="menu">
                 <DropDownItem
-                    leftIcon={<ArrowIcon />}
+                    to="#"
+                    leftIcon={<Icons.ArrowIcon />}
                     goToMenu="main"
                     setActiveMenu={props.setActiveMenu}
                 />
-                <DropDownItem leftIcon={<UserEditIcon />}>Update Profile</DropDownItem>
-                <DropDownItem leftIcon={<KeyIcon />}>Reset Password</DropDownItem>
+                <DropDownItem to="/update-profile" leftIcon={<Icons.UserEditIcon />}>Update Profile</DropDownItem>
+                <DropDownItem to="/reset-password" leftIcon={<Icons.KeyIcon />}>Reset Password</DropDownItem>
             </div>
         </CSSTransition>
     )

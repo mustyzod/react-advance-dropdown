@@ -1,12 +1,6 @@
 import React from 'react'
 import { CSSTransition } from 'react-transition-group';
-import {
-    ArrowIcon,
-    OnlineSupportIcon,
-    ToolsIcon,
-    HumanResourcesIcon,
-    EngineerIcon
-} from '../../../zodicons'
+import * as Icons from '../../../zodicons'
 import DropDownItem from '../../DropDownItem';
 
 const Assistance = (props) => {
@@ -20,14 +14,15 @@ const Assistance = (props) => {
         >
             <div className="menu">
                 <DropDownItem
-                    leftIcon={<ArrowIcon />}
+                    to="#"
+                    leftIcon={<Icons.ArrowIcon />}
                     goToMenu="main"
                     setActiveMenu={props.setActiveMenu}
                 />
-                <DropDownItem leftIcon={<OnlineSupportIcon />}>IT Support</DropDownItem>
-                <DropDownItem leftIcon={<ToolsIcon />}>Maintenance</DropDownItem>
-                <DropDownItem leftIcon={<HumanResourcesIcon />}>Human Resources</DropDownItem>
-                <DropDownItem leftIcon={<EngineerIcon />}>NX Request</DropDownItem>
+                <DropDownItem to="/itsupport" leftIcon={<Icons.OnlineSupportIcon />}>IT Support</DropDownItem>
+                <DropDownItem to="/maintenance" leftIcon={<Icons.ToolsIcon />}>Maintenance</DropDownItem>
+                <DropDownItem to="/hr-request" leftIcon={<Icons.HumanResourcesIcon />}>Human Resources</DropDownItem>
+                <DropDownItem to="/nx-request" leftIcon={<Icons.EngineerIcon />}>NX Request</DropDownItem>
             </div>
         </CSSTransition>
     )

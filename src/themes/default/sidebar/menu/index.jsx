@@ -2,6 +2,7 @@ import React from 'react';
 import Dashboard from './Dashboard'
 import Department from './Department'
 import HumanResource from './HumanResource'
+import Production from './Production'
 
 
 function index() {
@@ -10,6 +11,7 @@ function index() {
             <Dashboard />
             <Department />
             <HumanResource />
+            <Production />
         </div>
     )
 }

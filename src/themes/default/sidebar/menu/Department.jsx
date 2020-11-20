@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { DepartmentIcon, ArrowDownIcon } from '../../zodicons'
+import * as Icons from '../../zodicons'
 
 const dummy = [{ name: "Communications" }, { name: "Production" }]
 
@@ -8,12 +8,12 @@ const Department = () => {
     return (
         <ul className="sidemenu">
             <li className="sidemenu-parent" onClick={() => setOpen(!open)} >
-                <DepartmentIcon />
+                <Icons.DepartmentIcon />
                 <span className="sidemenu-text mobile-hide">
                     Department
                 </span>
 
-                <span className="sidemenu-arrow mobile-hide"><ArrowDownIcon /></span>
+                <span className="sidemenu-arrow mobile-hide"><Icons.ArrowDownIcon /></span>
             </li>
             {
                 open

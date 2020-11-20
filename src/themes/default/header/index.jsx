@@ -4,22 +4,17 @@ import DropDownMenu from './dropdown/DropDownMenu'
 import PlusMenu from './plusmenu/PlusMenu'
 import Navbar from './Navbar'
 
-import {
-    BellIcon,
-    MessengerIcon,
-    CaretIcon,
-    PlusIcon
-} from '../zodicons'
+import * as Icons from '../zodicons'
 
 const index = () => {
     return (
         <Navbar>
-            <NavItem icon={<PlusIcon />}>
+            <NavItem icon={<Icons.PlusIcon />}>
                 <PlusMenu />
             </NavItem>
-            <NavItem icon={<BellIcon />} />
-            <NavItem icon={<MessengerIcon />} />
-            <NavItem icon={<CaretIcon />}>
+            <NavItem icon={<Icons.BellIcon />} />
+            <NavItem icon={<Icons.MessengerIcon />} />
+            <NavItem icon={<Icons.CaretIcon />}>
                 {/* Dropdown goes here */}
                 <DropDownMenu />
             </NavItem>
