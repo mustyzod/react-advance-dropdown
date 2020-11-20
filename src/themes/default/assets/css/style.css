@@ -13,7 +13,7 @@ html body {
     --border: 1px solid #474a4d;
     --border-radius: 8px;
     --speed: 500ms;
-    --sidebar-width: 250px;
+    --sidebar-width: 270px;
 }
 
 .main-wrapper {
@@ -71,7 +71,7 @@ html body {
 
 .user-info p:nth-child(2) {
     color: var(--bg-accent) !important;
-    /* line-height: 1rem; */
+    line-height: 1.5rem;
     padding: 0;
     margin: 0;
     font-size: 16px;
@@ -187,6 +187,7 @@ a {
 
 
 /* CSSTransition classes  */
+
 .menu-primary-enter {
     position: absolute;
     transform: translateX(-110%);
@@ -244,7 +245,7 @@ a {
 }
 
 .sidemenu:hover {
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
     color: var(--bg);
     border-right: solid 5px var(--bg);
     cursor: pointer;
@@ -324,13 +325,16 @@ a {
     margin-top: 1rem;
 }
 
+
 /* main content */
-.container-right{
+
+.container-right {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
 }
-.content-wrapper{
+
+.content-wrapper {
     padding: 1rem 1.5rem;
 }
 
